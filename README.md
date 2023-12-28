@@ -5,3 +5,6 @@ Here is the list of the different automation processes I have developed over the
 
 # List of Automation Processes
 
+1. Apply Data Classifications to Azure databases using powershell.
+2. Azure databases Autoscaling (using Logic apps and Sharepoint Lists).
+

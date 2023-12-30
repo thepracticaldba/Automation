@@ -1,7 +1,9 @@
 ﻿#Connect-AzAccount 
 #(You can use different methods for authentication- MFA, service principal, MSI, credentials. https://learn.microsoft.com/en-us/powershell/module/az.accounts/connect-azaccount?view=azps-11.1.0#examples)
 #Install-Module -Name Az.Sql -RequiredVersion 2.6.0 -SkipPublisherCheck -force -AllowClobber
+#Install-Module -Name ImportExcel -RequiredVersion 7.8.4
 Import-module Az.Sql -RequiredVersion 2.6.0 -ErrorAction Stop
+Import-module ImportExcel -RequiredVersion 7.8.4 -ErrorAction Stop
 Set-Item Env:\SuppressAzurePowerShellBreakingChangeWarnings "true"
 
 $fileName  = "Data Classifications-" + (Get-Date -f yyyyMMdd) + ".xlsx"
